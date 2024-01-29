@@ -11,7 +11,8 @@
   --titulo3: #964B00;
 }
 .fondo {
-	
+	font-family:'Courier New', Courier, monospace;
+  font-weight: bold;
 background-size:cover;
 	position: relative;
 }
@@ -37,8 +38,8 @@ background-size:cover;
   pointer-events: none;
 }
 .name{
-  color:var(--titulo2);
   font-size: larger;
+
 }
 
 .name{
@@ -63,7 +64,6 @@ background-size:cover;
  
 }
 .name:hover{
-  
   transition: 1s ease-in-out;
 }
 .texto{
@@ -86,18 +86,11 @@ background-size:cover;
   font-size: calc(10px + 2vmin);
   color: white;
 }
-.text{
-  background-color:red;
-}
-.App-link {
-  color: #61dafb;
-}
-
-.fondo {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #61dafb;
+.info{
+/* background-color:green; */
 
 }
+
 
 @keyframes App-logo-spin {
   from {
@@ -106,5 +99,36 @@ background-size:cover;
 
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 576px){
+  .fondo{
+    color: #006F9A;
+  }
+ .fondo img{
+    background-size:contain;
+  }
+  .name{
+    text-align: right;
+  
+  }
+  .name::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 3px;
+    background-color: var(--texto);
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  .name:hover::before {
+    transform-origin: right;
+    transform: scaleX(0.3);
+   
   }
 }
