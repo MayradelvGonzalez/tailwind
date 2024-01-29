@@ -23,12 +23,12 @@ export default function App() {
      
       <img
       src={portadaPortfolio}
-  
+  id='fondo'
         // src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
         alt="imagen de fondo de pagina"
         aria-label='fondo de pagina'
         className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
-        style={{ opacity: '0.1' }}
+        style={{ opacity: '0.3' }}
       />
       <div
         className="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
@@ -64,7 +64,7 @@ export default function App() {
         <div className="mx-auto mt-20 max-w-2xl lg:mx-0 lg:max-w-none">
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
             {links.map((link) => (
-              <a key={link.name} href={link.href} target='_BLANK' rel="noopener noreferrer" tabIndex={0}>
+              <a key={link.name} href={link.href} target='_BLANK' rel="noopener noreferrer" tabIndex={0} className='name'>
                 {link.name} <span aria-hidden="true">&rarr;</span>
               </a>
             ))}
@@ -72,8 +72,9 @@ export default function App() {
           <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
             {stats.map((stat) => (
               <div key={stat.name} className="flex flex-col-reverse">
-                <dt className="text-base leading-7 text-gray-300">{stat.name}</dt>
-                <dd className="text-2xl font-bold leading-9 tracking-tight text-white">{stat.value}</dd>
+                <dt className="texto text-base leading-7 text-gray-100">{stat.name}</dt>
+                <dd className="text-3xl leading-9 tracking-tight text-white">{stat.value}</dd>
+                
               </div>
             ))}
           </dl>
