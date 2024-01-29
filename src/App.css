@@ -1,3 +1,38 @@
+:root {
+  --fondo: #4B4B4B;
+  --texto: #006F9A;
+  /* --titulo:#65D527; */
+  --titulo: #63ea92;
+  --fondo2: #FFFFFF;
+  --texto2: #FF2E00;
+  --titulo2: #444444;
+  --fondo3: #e7d395;
+  --texto3: #F3F2DA;
+  --titulo3: #964B00;
+}
+#fondo {
+	
+	padding: 400px 100px;
+	text-align: center;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+#fondo:before {
+	content:'';
+	position: absolute;
+        top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.5);
+}
+#fondo .name {
+	font-size: 60px;
+	color: #fff;
+	position: relative
+}
 .App {
   text-align: center;
 }
@@ -5,6 +40,40 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+.name{
+  color:var(--titulo2);
+  font-size: larger;
+}
+
+.name{
+  position: relative;
+}
+.name::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-radius: 3px;
+  background-color: var(--fondo2);
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+.name:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+ 
+}
+.name:hover{
+  color: black;
+
+  transition: 1s ease-in-out;
+}
+.texto{
+ font-size: large;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -23,19 +92,24 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.text{
+  background-color:red;
+}
 .App-link {
   color: #61dafb;
 }
-.fondo{
+
+.fondo {
   background-color: rgba(0, 0, 0, 0.5);
- color: #61dafb;
-  
+  color: #61dafb;
+
 }
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

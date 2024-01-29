@@ -9,7 +9,7 @@ const links = [
   
 ]
 const stats = [
-  { name: 'Aqui va un breve about me, mas o menos como lo del cv', value: 'More Info' },
+  { name: 'Aqui va un breve about me, mas o menos como lo del cv', value: 'More Info', className: 'texto'},
   { name: 'Aqui va una breve je informacion sobre miu experiencia', value: 'Experience' },
   { name: 'Aqui iria que es lo que estoy estudiando o haciendo ahora', value: 'Intereses' },
   
@@ -20,6 +20,7 @@ export default function App() {
   // }
   return (
     <div className="fondo relative isolate overflow-hidden bg-gray-900 py-24 sm:py-52">
+     
       <img
       src={portadaPortfolio}
   
@@ -27,7 +28,7 @@ export default function App() {
         alt="imagen de fondo de pagina"
         aria-label='fondo de pagina'
         className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
-        // style={imagenEstilo}
+        style={{ opacity: '0.1' }}
       />
       <div
         className="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
@@ -60,7 +61,7 @@ export default function App() {
         Full-Stack developer
           </p>
         </div>
-        <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+        <div className="mx-auto mt-20 max-w-2xl lg:mx-0 lg:max-w-none">
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
             {links.map((link) => (
               <a key={link.name} href={link.href} target='_BLANK' rel="noopener noreferrer" tabIndex={0}>
