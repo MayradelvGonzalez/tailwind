@@ -15,6 +15,11 @@
   font-weight: bold;
 background-size:cover;
 	position: relative;
+
+}
+.fondo p{
+  animation:zoomIn;
+  animation-duration:2s
 }
 .fondo:before {
 	content:"";
@@ -68,7 +73,23 @@ background-size:cover;
 }
 .texto{
  font-size: large;
+
 }
+.stat1{
+  animation:fadeInLeft;
+  animation-duration:2s;
+}
+.stat2{
+  animation:fadeInUp;
+  animation-duration:2.5s;
+}
+.stat3{
+  animation:fadeInRight;
+  animation-duration:2s;
+}
+
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -87,7 +108,8 @@ background-size:cover;
   color: white;
 }
 .info{
-/* background-color:green; */
+align-items:center;
+margin-top: 6em;
 
 }
 
@@ -131,4 +153,8 @@ background-size:cover;
     transform: scaleX(0.3);
    
   }
+
+
+
 }
+
