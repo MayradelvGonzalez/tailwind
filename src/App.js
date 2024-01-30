@@ -5,13 +5,13 @@ import 'animate.css';
 import logo from './assets/logo.gif';
 
 const links = [
-  { name: 'Linkedin', href: 'https://www.linkedin.com/in/mayra-gonz%C3%A1lez-v/'},
+  { name: 'Linkedin', href: 'https://www.linkedin.com/in/mayra-gonz%C3%A1lez-v/' },
   { name: 'Github', href: 'https://github.com/MayradelvGonzalez' },
-  { name: 'Email', href:"mailto:mayradelvallegonzalez@gmail.com"},
-  
+  { name: 'Email', href: "mailto:mayradelvallegonzalez@gmail.com" },
+
 ]
 const stats = [
-  { name: 'Aqui va un breve about me, mas o menos como lo del cv', value: 'More Info'},
+  { name: 'Aqui va un breve about me, mas o menos como lo del cv', value: 'More Info' },
   { name: 'Aqui va una breve je informacion sobre miu experiencia', value: 'Experience' },
   { name: 'Aqui iria que es lo que estoy estudiando o haciendo ahora', value: 'Intereses' },
 
@@ -21,13 +21,7 @@ export default function App() {
 
   return (
     <div className="fondo relative isolate overflow-hidden bg-gray-900 py-24 sm:py-52">
-  
-    
-      <img
-   
-    
-      src={portadaPortfolio}
-
+      <img src={portadaPortfolio}
         // src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
         alt="imagen de fondo de pagina"
         aria-label='fondo de pagina'
@@ -62,12 +56,9 @@ export default function App() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className=" textos text-4xl font tracking-tight text-white sm:text-6xl">
-            
-      Mayra del Valle González</h2> 
+            Mayra del Valle González</h2>
           <p className=" textos mt-20 text-4xl leading-9 text-gray-100">
-        Full-Stack developer
-          </p>
-        
+            Full-Stack developer</p>
         </div>
         <div className="mx-auto mt-20 max-w-2xl lg:mx-0 lg:max-w-none">
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
@@ -78,14 +69,14 @@ export default function App() {
             ))}
           </div>
           <dl className="info mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
-            {stats.map((stat,index) => (
+            {stats.map((stat, index) => (
               <div key={stat.name} className={`flex flex-col-reverse stat${index + 1}`}>
                 <dt className="textos text-base leading-7 text-gray-100">{stat.name}</dt>
                 <dd className="textos text-3xl leading-9 tracking-tight text-white">{stat.value}</dd>
               </div>
             ))}
           </dl>
-        </div>    
+        </div>
       </div>
     </div>
   )
