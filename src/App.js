@@ -38,7 +38,7 @@ export default function App() {
         className="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
         aria-hidden="true"
       >
-        {/* <img src={logo} className='logo'/> */}
+        {/* <img src={logo} className='logo'/>git */}
         <div
           className="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
           style={{
