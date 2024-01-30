@@ -2,18 +2,17 @@ import React from 'react';
 import './App.css';
 import portadaPortfolio from './assets/portadaPortfolio.webp';
 import 'animate.css';
-import logo from './assets/logo.gif';
 
 const links = [
-  { name: 'Linkedin', href: 'https://www.linkedin.com/in/mayra-gonz%C3%A1lez-v/' },
-  { name: 'Github', href: 'https://github.com/MayradelvGonzalez' },
-  { name: 'Email', href: "mailto:mayradelvallegonzalez@gmail.com" },
+  { name: 'Linkedin', href: 'https://www.linkedin.com/in/mayra-gonz%C3%A1lez-v/'},
+  { name: 'Github', href: 'https://github.com/MayradelvGonzalez'},
+  { name: 'Email', href: "mailto:mayradelvallegonzalez@gmail.com"},
 
 ]
 const stats = [
-  { name: 'Aqui va un breve about me, mas o menos como lo del cv', value: 'More Info' },
-  { name: 'Aqui va una breve je informacion sobre miu experiencia', value: 'Experience' },
-  { name: 'Aqui iria que es lo que estoy estudiando o haciendo ahora', value: 'Intereses' },
+  { name: 'Aqui va un breve about me, mas o menos como lo del cv', value: 'More Info'},
+  { name: 'Aqui va una breve je informacion sobre miu experiencia', value: 'Experience'},
+  { name: 'Aqui iria que es lo que estoy estudiando o haciendo ahora', value: 'Intereses'},
 
 ]
 
@@ -32,7 +31,6 @@ export default function App() {
         className="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
         aria-hidden="true"
       >
-        {/* <img src={logo} className='logo'/>git */}
         <div
           className="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
           style={{
