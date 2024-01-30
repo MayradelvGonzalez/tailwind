@@ -111,17 +111,6 @@
   align-items: center;
   margin-top: 6em;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 @media (max-width: 576px) {
   .fondo {
     color: #006F9A;
