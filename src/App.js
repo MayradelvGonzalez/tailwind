@@ -56,7 +56,7 @@ export default function App() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
         <div className="tituloLogo">
-          <h2 className=" textos text-4xl font tracking-tight text-white sm:text-6xl">
+          <h2 className=" textos tit text-4xl font tracking-tight text-white sm:text-6xl">
             Mayra del Valle González</h2>
             <div className='logo'><img src={LogoNsf} alt="Logo de página"  aria-label='logo de pagina' /></div></div>
           <p className=" textos mt-20 text-4xl leading-9 text-gray-100">
@@ -73,8 +73,8 @@ export default function App() {
           <dl className="info mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
             {stats.map((stat, index) => (
               <div key={stat.name} className={`flex flex-col-reverse stat${index + 1}`}>
-                <dt className="textos text-base leading-7 text-gray-100">{stat.name}</dt>
-                <dd className="textos text-3xl leading-9 tracking-tight text-white">{stat.value}</dd>
+                <dt className="textos text-base leading-8 text-gray-100">{stat.name}</dt>
+                <dd className="textos infor text-3xl leading-9 tracking-tight text-white">{stat.value}</dd>
               </div>
             ))}
           </dl>
