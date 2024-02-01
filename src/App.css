@@ -78,16 +78,34 @@
 .stat1 {
   animation: fadeInLeft;
   animation-duration: 2s;
+  margin-top: 3em;
 }
 
 .stat2 {
   animation: fadeInUp;
   animation-duration: 2.5s;
+  margin-top: 3em;
+
 }
 
 .stat3 {
   animation: fadeInRight;
   animation-duration: 2s;
+  margin-top: 3em;
+
+}
+.logo{
+  width: 20rem;
+  border-radius:15px;
+  background: rgb(0,0,0);
+background: radial-gradient(circle, rgba(0,0,0,1) 30%, transparent 70%);
+border-radius:15rem;
+  
+}
+.tituloLogo{
+  display: flex;
+  width: 100vh;
+  
 }
 
 @media (prefers-reduced-motion: no-preference) {

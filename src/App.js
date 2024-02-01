@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import portadaPortfolio from './assets/portadaPortfolio.webp';
 import 'animate.css';
+import LogoNsf from './assets/LogoNsf.png';
 
 const links = [
   { name: 'Linkedin', href: 'https://www.linkedin.com/in/mayra-gonz%C3%A1lez-v/'},
@@ -20,6 +21,7 @@ export default function App() {
 
   return (
     <div className="fondo relative isolate overflow-hidden bg-gray-900 py-24 sm:py-52">
+     
       <img src={portadaPortfolio}
         // src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
         alt="imagen de fondo de pagina"
@@ -53,8 +55,10 @@ export default function App() {
       </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
+        <div className="tituloLogo">
           <h2 className=" textos text-4xl font tracking-tight text-white sm:text-6xl">
             Mayra del Valle González</h2>
+            <div className='logo'><img src={LogoNsf} alt="Logo de página"  aria-label='logo de pagina' /></div></div>
           <p className=" textos mt-20 text-4xl leading-9 text-gray-100">
             Full-Stack developer</p>
         </div>
@@ -76,6 +80,7 @@ export default function App() {
           </dl>
         </div>
       </div>
+     
     </div>
   )
 }

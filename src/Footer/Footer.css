@@ -9,15 +9,19 @@
     --fondo3: #e7d395;
     --texto3: #F3F2DA;
     --titulo3: #964B00;
+    --footer:rgb(23, 22, 22);
   }
   
 .foot{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
-    background:var(--fondo);
+    background-color:var(--footer);
     width:auto;
     height: 5.3em;
     color: var(--texto3);
+}
+.foot .logo{
+  width: 8rem;
 }
