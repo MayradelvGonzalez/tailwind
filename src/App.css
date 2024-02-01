@@ -96,10 +96,7 @@
 }
 .logo{
   width: 20rem;
-  border-radius:15px;
-  background: rgb(0,0,0);
-background: radial-gradient(circle, rgba(0,0,0,1) 30%, transparent 70%);
-border-radius:15rem;
+background: radial-gradient(circle, rgba(0,0,0,1) 30%, transparent 60%);
   
 }
 .tituloLogo{
