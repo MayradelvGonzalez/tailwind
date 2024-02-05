@@ -16,6 +16,7 @@
   font-weight: bold;
   background-size: cover;
   position: relative;
+  padding-top: 3%;
 }
 
 .fondo p {
@@ -54,10 +55,7 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+
 
 .name::before {
   content: "";
@@ -105,8 +103,8 @@
 
 }
 .logo{
-  width: 20rem;
-background: radial-gradient(circle, rgba(0,0,0,1) 30%, transparent 60%);
+  width: 13rem;
+background: radial-gradient(circle, rgba(0,0,0,1) 30%, transparent 50%);
   
 }
 .tituloLogo{
@@ -116,7 +114,20 @@ background: radial-gradient(circle, rgba(0,0,0,1) 30%, transparent 60%);
 
   
 }
+#cuadro{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  height: auto;
+  flex-wrap: wrap;
+}
+ #cuadro .textos{
+ width: 25rem;
 
+}
+.info #info{
+  height: 10rem;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -133,23 +144,27 @@ background: radial-gradient(circle, rgba(0,0,0,1) 30%, transparent 60%);
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.info {
-  align-items: center;
-  margin-top: 6em;
+#titInfo{
+  padding: 0.2em;
+  margin-bottom: 0.5em;
 }
+#titInfo:hover{
+color:var(--titulo);
+transition: 0.5s ease-in-out;
+}
+
 @media (max-width: 576px) {
-  /* .fondo {
-    color: #006F9A;
+   .fondo {
+    padding-top: 4%;
 
-  } */
+  } 
 
-  .fondo{
-    border:1rem solid var(--fondo);
-    border-radius: 4em;
-  }
+
 body{
   background-color:var(--fondo);
+  scrollbar-color:var(--titulo) var(--fondo);
+  scrollbar-width: auto;
+
 }
   .name {
     text-align: right;
@@ -176,8 +191,9 @@ body{
 
   }
   .logo{
-    width: 13rem;
-background: radial-gradient(circle, rgba(0,0,0,1) 10%, transparent 70%);
+    width: 10rem;
+    margin-bottom: 3rem;
+background: radial-gradient(circle, rgba(0,0,0,1) 10%, transparent 55%);
   }
   .tituloLogo{
     display: flex;
@@ -186,11 +202,22 @@ background: radial-gradient(circle, rgba(0,0,0,1) 10%, transparent 70%);
    
   }
 
-  .fondo .textos{
-    font-size: 1.5em;
+  #nombre{
+    font-size: 2em;
+    font-family:'Courier New', Courier, monospace;
   
     }
- 
+#subtitulo{
+  font-size: 1.4em;
+}
+#info{
+  font-size: 1.2em;
+  flex-direction: column;
+  margin: 1em;
+  height: fit-content;
+width: 10rem;
+  background-color:#006F9A;
+}
 
 
 }
