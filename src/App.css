@@ -159,7 +159,7 @@
 
 
   body {
-    background-color: var(--fondo);
+    background-color: var(--footer);
     scrollbar-color: var(--titulo) var(--fondo);
     scrollbar-width: auto;
 
@@ -216,9 +216,14 @@
     font-size: 1.2em;
     flex-direction: column;
     margin: 0.5em;
-    height: fit-content;
+    
     width: 10rem;
   }
-
-
+.stat3{
+  padding-bottom: 4em;
+}
+.stat1{
+ 
+  height: 10rem;
+}
 }
