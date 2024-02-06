@@ -3,6 +3,7 @@ import './App.css';
 import portadaPortfolio from './assets/portadaPortfolio.webp';
 import 'animate.css';
 import LogoNsf from './assets/LogoNsf.png';
+import Carrousel from './Carrousel/Carrousel';
 
 const links = [
   { name: 'Linkedin', href: 'https://www.linkedin.com/in/mayra-gonz%C3%A1lez-v/'},
@@ -81,7 +82,7 @@ export default function App() {
           </dl>
         </div>
       </div>
-     
+     <Carrousel />
     </div>
   )
 }
