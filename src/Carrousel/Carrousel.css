@@ -1,0 +1,31 @@
+:root {
+    --fondo: #4B4B4B;
+    --texto: #006F9A;
+    /* --titulo:#65D527; */
+    --titulo: #63ea92;
+    --fondo2: #FFFFFF;
+    --texto2: #FF2E00;
+    --titulo2: #444444;
+    --fondo3: #e7d395;
+    --texto3: #F3F2DA;
+    --titulo3: #964B00;
+  }
+.caruselCompleto{
+    border:0.3em solid black;
+    display: flex;
+    width: 60em;
+    background-color:var(--fondo);
+    margin: 3em;
+}
+.carrusel{
+    background-color:var(--fondo);
+    
+   
+}
+.contenido{
+   background-color:var(--fondo);
+    padding:0.3em;
+}
+Button{
+    color:firebrick;
+}
