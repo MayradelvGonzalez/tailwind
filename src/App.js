@@ -84,16 +84,17 @@ export default function App() {
               </a>
             ))} */}
               {stats.map((stat, index) => (
-              <div key={stat.name} className={`textInfo flex flex-col-reverse stat${index + 1}`}>
+              <div key={stat.name} className={`flex stat${index + 1}`} style={{ position: 'relative' }}>  
                 <button
                   className="dropdown-trigger"
                   onClick={() => handleButtonClick(`button${index + 1}`)}
                 >
-                  <dt className="tituloInfo text-base leading-8 text-gray-100">{stat.name}</dt>
+                  <dt className="textos text-base leading-8 text-gray-100">{stat.name}</dt>
                 </button>
-                <dd className="textos infor text-3xl leading-9 tracking-tight text-white" id='titInfo' style={{ display: buttonStates[`button${index + 1}`] ? 'block' : 'none' }}>
-                  {stat.value}
-                </dd>
+                <dd className="textos infor text-1xl leading-8 tracking-tight text-white" id='titInfo' style={{ position: 'absolute', top: '100%', left: 0, display: buttonStates[`button${index + 1}`] ? 'block' : 'none' }}>
+  <div className="info-container">{stat.value}</div> </dd>
+
+
               </div>
             ))}
           </div>
