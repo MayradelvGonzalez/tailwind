@@ -1,4 +1,4 @@
-import React,{ useState} from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import portadaPortfolio from './assets/portadaPortfolio.webp';
 import 'animate.css';
@@ -6,15 +6,15 @@ import LogoNsf from './assets/LogoNsf.png';
 import Info from './Info/Info';
 
 const links = [
-  { name: 'Linkedin', href: 'https://www.linkedin.com/in/mayra-gonz%C3%A1lez-v/'},
-  { name: 'Github', href: 'https://github.com/MayradelvGonzalez'},
-  { name: 'Email', href: "mailto:mayradelvallegonzalez@gmail.com"},
+  { name: 'Linkedin', href: 'https://www.linkedin.com/in/mayra-gonz%C3%A1lez-v/' },
+  { name: 'Github', href: 'https://github.com/MayradelvGonzalez' },
+  { name: 'Email', href: "mailto:mayradelvallegonzalez@gmail.com" },
 
 ]
 const stats = [
-  { name: 'About Me', value: 'Disfruto aprender, resolver los problemas y crear cosas nuevas'},
-  { name: 'Experience', value: 'Soy docente de música, egresada un bootcamp de desarrollo FullStack MERN, tutora en un curso de programacion backend y autodidacta'},
-  { name: 'Intereses', value: 'Me interesa adquirir nuevas habilidades tanto tecnicas como blandas. Entre mis intereses estan la accesibilidad web, algo que he aplicado este en este portfolio. Creo que como programadores debemos crear herramientas que lleguen al alcance de la mayor cantidad de personas mas alla de sus habilidades'},
+  { name: 'About Me', value: 'Disfruto aprender, resolver los problemas y crear cosas nuevas' },
+  { name: 'Experience', value: 'Soy docente de música, egresada un bootcamp de desarrollo FullStack MERN, tutora en un curso de programacion backend y autodidacta' },
+  { name: 'Intereses', value: 'Me interesa adquirir nuevas habilidades tanto tecnicas como blandas. Entre mis intereses estan la accesibilidad web, algo que he aplicado este en este portfolio. Creo que como programadores debemos crear herramientas que lleguen al alcance de la mayor cantidad de personas mas alla de sus habilidades' },
 
 ]
 
@@ -32,9 +32,9 @@ export default function App() {
     }));
   };
   return (
-    
+
     <div className="fondo relative isolate overflow-hidden bg-gray-900 py-24 sm:py-52">
-              <div className='logo'><img src={LogoNsf} alt="Logo de página"  aria-label='logo de pagina' /></div>
+      <div className='logo'><img src={LogoNsf} alt="Logo de página" aria-label='logo de pagina' /></div>
       <img src={portadaPortfolio}
         // src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
         alt="imagen de fondo de pagina"
@@ -69,30 +69,32 @@ export default function App() {
       </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
-        <div className="tituloLogo">
-          <h2 className=" textos tit text-4xl font tracking-tight text-white sm:text-6xl" id='nombre'>
-            Mayra del Valle González</h2>
-           </div>
+          <div className="tituloLogo">
+            <h2 className=" textos tit text-4xl font tracking-tight text-white sm:text-6xl" id='nombre'>
+              Mayra del Valle González</h2>
+          </div>
           <p className="textos mt-20 text-4xl leading-9 text-gray-100" id='subtitulo'>
             Full-Stack developer</p>
         </div>
-        <div className="mx-auto mt-20 max-w-2xl lg:mx-0 lg:max-w-none">
+        <div className="mx-auto mt-20 max-w-2xl lg:mx-0 lg:max-w-none" id='caja'>
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
             {/* {links.map((link) => (
               <a key={link.name} href={link.href} target='_BLANK' rel="noopener noreferrer" tabIndex={0} className='name link'>
                 {link.name} <span aria-hidden="true">&rarr;</span>
               </a>
             ))} */}
-              {stats.map((stat, index) => (
-              <div key={stat.name} className={`flex stat${index + 1}`} style={{ position: 'relative' }}>  
+            {stats.map((stat, index) => (
+              <div key={stat.name} className={`flex stat${index + 1}`} style={{ position: 'relative' }}>
                 <button
                   className="dropdown-trigger"
                   onClick={() => handleButtonClick(`button${index + 1}`)}
                 >
-                  <dt className="textos text-base leading-8 text-gray-100">{stat.name}</dt>
+                  <dt className="textos text-base leading-8 text-gray-100" id='tituloInformacion'>{stat.name}</dt>
+                  <span className="arrow-down">&#9660;</span>
                 </button>
-                <dd className="textos infor text-1xl leading-8 tracking-tight text-white" id='titInfo' style={{ position: 'absolute', top: '100%', left: 0, display: buttonStates[`button${index + 1}`] ? 'block' : 'none' }}>
-  <div className="info-container">{stat.value}</div> </dd>
+                <dd className="textos text-1xl leading-9 tracking-tight text-white" id='titInfo' style={{ position: 'absolute', top: '100%', left: 0, display: buttonStates[`button${index + 1}`] ? 'block' : 'none' }}>
+                 <div className="info-container">{stat.value}</div>
+                  </dd>
 
 
               </div>
@@ -106,17 +108,21 @@ export default function App() {
               </div>
             ))}
           </dl> */}
- 
+
 
         </div>
-       
-    
+
+
 
       </div>
-     
+
     </div>
-        
-    
+
+
   )
- 
+
 }
+
+
+
+
