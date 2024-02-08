@@ -21,7 +21,9 @@
 
 .fondo p {
   animation: zoomIn;
-  animation-duration: 2s
+  animation-duration: 2s;
+  margin-bottom: 3em;
+
 }
 
 .fondo:before {
@@ -42,15 +44,17 @@
 
 .fondo .tit {
   font-size: 3.5em;
-
 }
 
 .fondo .infor {
   padding-bottom: 1em;
+
 }
 
 .fondo .name {
   font-size: 1.3em;
+ 
+
 
 }
 
@@ -63,14 +67,14 @@
 #tituloInformacion::before {
   content: "";
   position: absolute;
-  width: 90%;
+  width: 80%;
   height: 4px;
   border-radius: 3px;
   background-color: var(--titulo);
   bottom: 0;
   left: 0;
   transform-origin: right;
-  transform: scaleX(1);
+  transform: scaleX(0.8);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -122,6 +126,7 @@
 }
 #tituloInformacion{
   font-size: 1.8em;
+
 }
 #cuadro {
   display: flex;
@@ -235,7 +240,8 @@ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans
   right: 0.8rem;
   transform: translateY(-50%);
   background-color:black;
-  
+border-radius:1em;
+border:0.1em solid var(--fondo2);
   width: 10%;
 }
 .arrow-down:hover{
