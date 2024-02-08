@@ -292,7 +292,6 @@ border:0.1em solid var(--fondo2);
 
   .name {
     text-align: right;
-
   }
 
   .name::before {
@@ -414,5 +413,12 @@ border:0.1em solid var(--fondo2);
   
   #tituloInformacion:hover {
     transition: 1s ease-in-out;
+  }
+  .link{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 0;
+    
   }
 }
