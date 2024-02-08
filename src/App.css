@@ -417,7 +417,7 @@ border:0.1em solid var(--fondo2);
   .link{
     display: flex;
     flex-direction: column;
-    justify-content: end;
+
     padding: 0;
     
   }
