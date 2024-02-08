@@ -140,16 +140,75 @@
 
 
 
+.fondo {
+  background-color: var(--footer);
+  scrollbar-color: var(--titulo) var(--fondo);
+  scrollbar-width: auto;
+
+}
 
 #titInfo {
   padding: 0.2em;
   margin-bottom: 0.5em;
 }
 
-#titInfo:hover {
+
+
+/* Show dropdown content when open 
+ .dropdown-trigger.open dd {
+  display: block;
+} 
+*/
+ .dropdown-trigger dd {
+  display: flex;
+   position: absolute; 
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  
+} 
+
+.grid{
+  display: flex;
+  justify-content: space-around;
+ font-family:'Courier New', Courier, monospace;
+ border: 0.2px solid var(--texto);
+}
+.grid .textos:hover{
   color: var(--titulo);
   transition: 0.5s ease-in-out;
 }
+.info-container {
+  max-width: 500px; /* Adjust as needed */
+  height: auto;
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds height */
+  padding: 1rem; /* Add padding for better readability */
+  border: 1px solid #ccc; /* Optional border for visual separation */
+  border-radius: 5px; /* Optional rounded corners */
+  background-color:var(--fondo2);
+  color:var(--fondo);
+}
+
+#textInfo{
+  background-color:var(--fondo2);
+}
+/* @keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 2s;
+  }
+} */
+
+ .dropdown-trigger {
+width: 20rem;
+} 
+
+
 /* ---------------------------------------------------------------------------------- */
 @media (max-width: 576px) {
   .fondo {
@@ -158,12 +217,6 @@
   }
 
 
-  body {
-    background-color: var(--footer);
-    scrollbar-color: var(--titulo) var(--fondo);
-    scrollbar-width: auto;
-
-  }
 
   .name {
     text-align: right;
@@ -221,9 +274,20 @@
   }
 .stat3{
   padding-bottom: 4em;
+  animation: fadeInUp;
+  animation-duration: 2.5s;
+
+
+}
+.stat2{
+  animation: fadeInRight;
+  animation-duration: 2.5s;
+  padding-bottom: 0.1em;
 }
 .stat1{
- 
-  height: 10rem;
+  animation: fadeInLeft;
+  animation-duration: 2.5s;
+  margin-top: 3em;
+  height: 9rem;
 }
 }
