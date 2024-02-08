@@ -45,10 +45,22 @@
 .fondo .tit {
   font-size: 3.5em;
 }
-
+.links-container{
+  padding: 1em;
+  margin-bottom: 4em;
+}
+a {
+  margin:1em;
+  padding: 1em;
+  color:var(--texto2);
+  cursor: pointer;
+}
+.name:hover{
+  color:var(--titulo);
+  transition: 0.5s ease-in-out;
+}
 .fondo .infor {
   padding-bottom: 1em;
-
 }
 
 .fondo .name {
@@ -86,6 +98,7 @@
 #tituloInformacion:hover {
   transition: 1s ease-in-out;
 }
+
 
 .texto {
   font-size: larger;
@@ -158,6 +171,7 @@
 #titInfo {
   padding: 0.2em;
   margin-bottom: 0.5em;
+
 }
 
 
@@ -173,6 +187,7 @@
   top: 100%;
   left: 0;
   z-index: 10;
+
 }
 
 .grid {
@@ -180,9 +195,7 @@
   justify-content: space-around;
   font-family: 'Courier New', Courier, monospace;
 }
-dd{
-  background-color:palegoldenrod;
-}
+
 .grid .textos:hover {
   color: var(--titulo);
   transition: 0.5s ease-in-out;
@@ -203,10 +216,12 @@ dd{
   max-height: 250px;
 font-size: large;
 font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 #caja{
   margin-bottom:3em;
   padding-bottom: 4em;
+
 }
 #textInfo {
   background-color: var(--fondo2);
@@ -226,6 +241,8 @@ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans
 
 .dropdown-trigger {
   width: 20rem;
+  margin-top: 4em;
+
 }
 /* -------------------------------agregado para flecha------------------------------- */
 
@@ -235,14 +252,15 @@ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans
 }
 
 .arrow-down {
-  position: absolute;
-  top: 40%;
+  /* position: absolute; */
+  top: 80%;
   right: 0.8rem;
   transform: translateY(-50%);
   background-color:black;
 border-radius:1em;
 border:0.1em solid var(--fondo2);
-  width: 10%;
+  width: 30%;
+  padding: 0.1em 0.6em;
 }
 .arrow-down:hover{
   background-color:var(--fondo2);

@@ -3,7 +3,6 @@ import './App.css';
 import portadaPortfolio from './assets/portadaPortfolio.webp';
 import 'animate.css';
 import LogoNsf from './assets/LogoNsf.png';
-import Info from './Info/Info';
 
 const links = [
   { name: 'Linkedin', href: 'https://www.linkedin.com/in/mayra-gonz%C3%A1lez-v/' },
@@ -77,28 +76,31 @@ export default function App() {
             Full-Stack developer</p>
         </div>
         <div className="mx-auto mt-20 max-w-2xl lg:mx-0 lg:max-w-none" id='caja'>
-          <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
-            {/* {links.map((link) => (
+        <div className="links-container">
+   {links.map((link) => (
               <a key={link.name} href={link.href} target='_BLANK' rel="noopener noreferrer" tabIndex={0} className='name link'>
                 {link.name} <span aria-hidden="true">&rarr;</span>
               </a>
-            ))} */}
-            {stats.map((stat, index) => (
-              <div key={stat.name} className={`flex stat${index + 1}`} style={{ position: 'relative' }}>
-                <button
-                  className="dropdown-trigger"
-                  onClick={() => handleButtonClick(`button${index + 1}`)}
-                >
-                  <dt className="textos text-base leading-8 text-gray-100" id='tituloInformacion'>{stat.name}</dt>
-                  <span className="arrow-down">&#9660;</span>
-                </button>
-                <dd className="textos text-1xl leading-9 tracking-tight text-white" id='titInfo' style={{ position: 'absolute', top: '100%', left: 0, display: buttonStates[`button${index + 1}`] ? 'block' : 'none' }}>
-                 <div className="info-container">{stat.value}</div>
-                  </dd>
-
-
-              </div>
             ))}
+    </div>
+          <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
+         
+           {stats.map((stat, index) => (
+  <div key={stat.name} className={`flex stat${index + 1}`} style={{ position: 'relative' }}>
+    <button
+      className="dropdown-trigger"
+      onClick={() => handleButtonClick(`button${index + 1}`)}
+    >
+      <dt className="textos text-base leading-8 text-gray-100" id='tituloInformacion'>{stat.name}</dt>
+      <span className="arrow-down">&#9660;</span>
+    </button>
+    <dd className="textos text-1xl leading-9 tracking-tight text-white" id='titInfo' style={{ position: 'absolute', top: '100%', left: 0, display: buttonStates[`button${index + 1}`] ? 'block' : 'none' }}>
+      <div className="info-container">{stat.value}</div>
+    </dd>
+    
+  </div>
+))}
+
           </div>
           {/* <dl className="info mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4" id='cuadro'>
             {stats.map((stat, index) => (
