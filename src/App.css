@@ -75,7 +75,6 @@ a {
 }
 
 
-
 #tituloInformacion::before {
   content: "";
   position: absolute;
@@ -171,7 +170,6 @@ a {
 #titInfo {
   padding: 0.2em;
   margin-bottom: 0.5em;
-
 }
 
 
