@@ -61,14 +61,15 @@ a {
 .name:hover{
   color:var(--titulo);
   transition: 0.5s ease-in-out;
+
 }
 .fondo .infor {
   padding-bottom: 1em;
+  
 }
 
 .fondo .name {
   font-size: 1.3em;
- 
 
 
 }
@@ -110,14 +111,12 @@ a {
   animation: fadeInLeft;
   animation-duration: 2s;
   margin-top: 3em;
-  
 }
 
 .stat2 {
   animation: fadeInUp;
   animation-duration: 2.5s;
   margin-top: 3em;
-
 }
 
 .stat3 {
@@ -150,12 +149,6 @@ a {
   justify-content: center;
   height: auto;
   flex-wrap: wrap;
-  
-}
-
-#cuadro .textos {
-  width: 20rem;
-
 }
 
 .info #info {
@@ -176,16 +169,10 @@ a {
   padding: 0.2em;
   margin-bottom: 0.5em;
   box-shadow: 0px 6px 6px;
-  
+ 
 }
 
 
-
-/* Show dropdown content when open 
- .dropdown-trigger.open dd {
-  display: block;
-} 
-*/
 .dropdown-trigger dd {
   display: flex;
   position: absolute;
@@ -193,21 +180,30 @@ a {
   left: 0;
   z-index: 10;
 
-}
 
+}
 .grid {
   display: flex;
   justify-content: space-around;
   font-family: 'Courier New', Courier, monospace;
 }
-
-.grid .textos:hover {
-  color: black;
-  transition: 0.4s ease-in-out;
-  background: linear-gradient(to right,rgb(16, 16, 16), var(--fondo2),rgb(16,16,16));
-  border-radius:0.5rem;
+#titInfo :hover {
+  transition: 0.5s ease-in-out;
+  box-shadow: 0px 7px 7px var(--titulo);
+  color:white;
 }
-
+/* .grid :hover{
+  text-shadow:
+  0 0 7px var(--fondo),
+  0 0 42px var(--titulo2),
+  0 0 82px var(--titulo),
+  0 0 92px var(--titulo),
+  0 0 102px var(--titulo),
+  0 0 151px var(--titulo);
+} */
+.grid :hover{
+  color:#63ea92
+}
 .info-container {
   width: 350px;
   /* Adjust as needed */
@@ -239,6 +235,9 @@ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans
   margin-top: 4em;
 
 }
+
+
+
 /* -------------------------------agregado para flecha------------------------------- */
 
 .stat-button {

@@ -84,7 +84,8 @@ export default function App() {
       <button className="dropdown-trigger" onClick={() => handleButtonClick(`button${index + 1}`)}>
         <dl>
           <div>
-            <dt className="textos text-base leading-8 text-gray-100" id='tituloInformacion'>
+            
+            <dt className="textos text-base leading-8 " id='tituloInformacion'>
               {stat.name}
             </dt>
             <dd className="textos text-1xl leading-9 tracking-tight text-white" id='titInfo'
