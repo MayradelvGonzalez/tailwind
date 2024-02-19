@@ -76,7 +76,7 @@ export default function App() {
               </a>
             ))}
           </div>
-          // ...
+          
 
 <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
   {stats.map((stat, index) => (
@@ -104,7 +104,6 @@ export default function App() {
   ))}
 </div>
 
-// ...
 
         </div>
       </div>
