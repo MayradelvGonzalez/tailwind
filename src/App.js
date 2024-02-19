@@ -30,8 +30,8 @@ export default function App() {
       
       <div className='logo'><img src={LogoNsf} alt="Logo" aria-label='page logo' /></div>
       <img src={portadaPortfolio}
-        alt="background image"
-        aria-label='background photo'
+        alt="background"
+        aria-label='background'
         className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
         style={{ opacity: '0.3' }}
       />
