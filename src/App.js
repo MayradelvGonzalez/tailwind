@@ -28,10 +28,10 @@ export default function App() {
   return (
     <div className="fondo relative isolate overflow-hidden bg-gray-900 py-24 sm:py-52">
       
-      <div className='logo'><img src={LogoNsf} alt="Page logo" aria-label='page logo' /></div>
+      <div className='logo'><img src={LogoNsf} alt="Logo" aria-label='page logo' /></div>
       <img src={portadaPortfolio}
-        alt="background image "
-        aria-label='background image'
+        alt="background image"
+        aria-label='background photo'
         className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
         style={{ opacity: '0.3' }}
       />
