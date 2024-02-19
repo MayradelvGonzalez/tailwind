@@ -27,6 +27,7 @@ export default function App() {
 
   return (
     <div className="fondo relative isolate overflow-hidden bg-gray-900 py-24 sm:py-52">
+      
       <div className='logo'><img src={LogoNsf} alt="Logo de página" aria-label='logo de pagina' /></div>
       <img src={portadaPortfolio}
         alt="imagen de fondo de pagina"
