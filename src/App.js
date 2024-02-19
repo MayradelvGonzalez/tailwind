@@ -12,7 +12,7 @@ const links = [
 
 const stats = [
   { name: 'About Me', value: 'Disfruto aprender, resolver los problemas y crear cosas nuevas' },
-  { name: 'Experience', value: 'Soy docente de música, egresada un bootcamp de desarrollo FullStack MERN, tutora en un curso de programacion backend y autodidacta' },
+  { name: 'Experience', value: 'Soy docente, egresada de un bootcamp de desarrollo Full-Stack MERN, tutora en un curso de programacion backend y autodidacta' },
   { name: 'Interests', value: 'Me interesa adquirir nuevas habilidades tanto tecnicas como blandas. Entre mis intereses estan la accesibilidad web, algo que he aplicado este en este portfolio. Creo que como programadores debemos crear herramientas que lleguen al alcance de la mayor cantidad de personas mas alla de sus habilidades' },
 ];
 
