@@ -28,10 +28,10 @@ export default function App() {
   return (
     <div className="fondo relative isolate overflow-hidden bg-gray-900 py-24 sm:py-52">
       
-      <div className='logo'><img src={LogoNsf} alt="Logo de página" aria-label='logo de pagina' /></div>
+      <div className='logo'><img src={LogoNsf} alt="Page logo" aria-label='page logo' /></div>
       <img src={portadaPortfolio}
-        alt="imagen de fondo de pagina"
-        aria-label='fondo de pagina'
+        alt="background image "
+        aria-label='background image'
         className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
         style={{ opacity: '0.3' }}
       />
@@ -76,38 +76,36 @@ export default function App() {
               </a>
             ))}
           </div>
-          <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
-            {stats.map((stat, index) => (
-              <div
-                key={stat.name}
-                className={`flex stat${index + 1}`}
-                style={{ position: 'relative' }}
-              >
-                <button
-                  className="dropdown-trigger"
-                  onClick={() => handleButtonClick(`button${index + 1}`)}
-                >
-                  <dt className="textos text-base leading-8 text-gray-100" id='tituloInformacion'>
-                    {stat.name}
-                  </dt>
-                  <span className="arrow-down">&#9660;</span>
-                </button>
-                <dd
-                  className="textos text-1xl leading-9 tracking-tight text-white"
-                  id='titInfo'
-                  style={{
-                    position: 'absolute',
-                    top: '100%',
-                    left: 0,
-                    display:
-                      selectedOption === `button${index + 1}` ? 'block' : 'none',
-                  }}
-                >
-                  <div className="info-container">{stat.value}</div>
-                </dd>
-              </div>
-            ))}
+          // ...
+
+<div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
+  {stats.map((stat, index) => (
+    <div key={stat.name} className={`flex stat${index + 1}`} style={{ position: 'relative' }}>
+      <button className="dropdown-trigger" onClick={() => handleButtonClick(`button${index + 1}`)}>
+        <dl>
+          <div>
+            <dt className="textos text-base leading-8 text-gray-100" id='tituloInformacion'>
+              {stat.name}
+            </dt>
+            <dd className="textos text-1xl leading-9 tracking-tight text-white" id='titInfo'
+              style={{
+                position: 'absolute',
+                top: '100%',
+                left: 0,
+                display: selectedOption === `button${index + 1}` ? 'block' : 'none',
+              }}
+            >
+              <div className="info-container">{stat.value}</div>
+            </dd>
           </div>
+        </dl>
+      </button>
+    </div>
+  ))}
+</div>
+
+// ...
+
         </div>
       </div>
     </div>

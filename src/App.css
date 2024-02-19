@@ -89,7 +89,6 @@ a {
   transform-origin: right;
   transform: scaleX(0.9);
   transition: transform 0.3s ease-in-out;
-box-shadow: 0 3.5px 6px 2px #0a7e33;
 }
 .name:hover::before {
   transform-origin: left;
@@ -127,7 +126,7 @@ box-shadow: 0 3.5px 6px 2px #0a7e33;
 }
 
 .logo {
-  width: 13rem;
+  width: 10rem;
   background: radial-gradient(circle, rgb(0, 0, 0) 30%, transparent 50%);
   margin: 3em;
 }
@@ -174,8 +173,8 @@ box-shadow: 0 3.5px 6px 2px #0a7e33;
 #titInfo {
   padding: 0.2em;
   margin-bottom: 0.5em;
-  box-shadow: 4px 4px 10px;
-
+  box-shadow: 0px 6px 10px;
+  
 }
 
 
