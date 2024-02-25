@@ -79,13 +79,9 @@ legend{
 Button{
     width: 20em;
 }
-#mensaje{
-    color:#63ea92;
-    font-weight: bold;
-    font-size:1em;
+Alert{
+  
+   
     margin: 1em;
-    background-color:var(--titulo3);
     padding: 0.5em;
-    border:0.2em double var(--fondo2);
-    border-radius:0.2em;
 }

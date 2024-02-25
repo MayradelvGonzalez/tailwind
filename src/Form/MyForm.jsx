@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { TextField, Button } from "@mui/material";
 import './MyForm.css';
+import Alert from '@mui/material/Alert';
+
 
 const MyForm = () => {
   // Estados para manejar el mensaje y el estado de envío
@@ -63,7 +65,9 @@ const MyForm = () => {
         </Button>
 
         {/* Mostrar mensaje de enviado si el formulario ha sido enviado */}
-        {isSubmitted && <p id="mensaje">Send Message 📨 Thanks!!!</p>}
+        {isSubmitted && <Alert variant="filled" severity="success">
+  Message Send
+</Alert>}
       </fieldset>
     </div>
   );
