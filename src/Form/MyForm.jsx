@@ -3,8 +3,9 @@ import { TextField, Button } from "@mui/material";
 import './MyForm.css';
 
 const MyForm = () => {
-  // Estado para manejar el mensaje
+  // Estados para manejar el mensaje y el estado de envío
   const [message, setMessage] = useState('');
+  const [isSubmitted, setSubmitted] = useState(false);
 
   // Función para manejar cambios en el campo de mensaje
   const handleInputChange = (event) => {
@@ -13,9 +14,12 @@ const MyForm = () => {
 
   // Función para manejar el envío del formulario
   const handleSubmit = () => {
-    // Aquí puedes realizar acciones adicionales con el mensaje, como enviarlo a un servidor, etc.
-    // Por ahora, simplemente mostraremos el mensaje en la consola.
+    // Realizar acciones adicionales con el mensaje, como enviarlo a un servidor, etc.
     console.log("Mensaje recibido:", message);
+
+    // Limpiar el campo de mensaje después de enviar y marcar como enviado
+    setMessage('');
+    setSubmitted(true);
   };
 
   return (
@@ -57,10 +61,12 @@ const MyForm = () => {
         >
           Submit
         </Button>
+
+        {/* Mostrar mensaje de enviado si el formulario ha sido enviado */}
+        {isSubmitted && <p id="mensaje">Send Message 📨 Thanks!!!</p>}
       </fieldset>
     </div>
   );
 };
 
 export default MyForm;
-
