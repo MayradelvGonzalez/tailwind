@@ -3,11 +3,15 @@ import './App.css';
 import portadaPortfolio from './assets/portadaPortfolio.webp';
 import 'animate.css';
 import LogoNsf from './assets/LogoNsf.png';
+import MyForm from './Form/MyForm';
+import { Link } from 'react-router-dom';
+import Footer from './Footer/Footer';
 
 const links = [
   { name: 'Linkedin', href: 'https://www.linkedin.com/in/mayra-gonz%C3%A1lez-v/' },
   { name: 'Github', href: 'https://github.com/MayradelvGonzalez' },
   { name: 'Email', href: "mailto:mayradelvallegonzalez@gmail.com" },
+  { name: 'Contact me!', to:"/contact"},
 ];
 
 const stats = [
@@ -70,11 +74,17 @@ export default function App() {
         </div>
         <div className="mx-auto mt-20 max-w-2xl lg:mx-0 lg:max-w-none" id='caja'>
           <div className="links-container">
-            {links.map((link) => (
-              <a key={link.name} href={link.href} target='_BLANK' rel="noopener noreferrer" tabIndex={0} className='name link'>
-                {link.name} <span aria-hidden="true">&rarr;</span>
-              </a>
-            ))}
+          {links.map((link) => (
+    link.to ? (
+      <Link key={link.name} to={link.to} className='name link'>
+        {link.name} <span aria-hidden="true">&rarr;</span>
+      </Link>
+    ) : (
+      <a key={link.name} href={link.href} target='_BLANK' rel="noopener noreferrer" tabIndex={0} className='name link'>
+        {link.name} <span aria-hidden="true">&rarr;</span>
+      </a>
+    )
+  ))}
           </div>
           
 
@@ -108,6 +118,7 @@ export default function App() {
 
         </div>
       </div>
+  
     </div>
   );
 }

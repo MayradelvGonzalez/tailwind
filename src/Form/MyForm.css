@@ -1,0 +1,41 @@
+:root {
+    --fondo: #4B4B4B;
+    --texto: #006F9A;
+    /* --titulo:#65D527; */
+    --titulo: #63ea92;
+    --fondo2: #FFFFFF;
+    --texto2: #FF2E00;
+    --titulo2: #444444;
+    --fondo3: #e7d395;
+    --texto3: #F3F2DA;
+    --titulo3: #964B00;
+    --footer:rgb(23, 22, 22);
+  }
+  
+#containerForm {
+    display: flex;
+    justify-content: center;
+    border-radius: 0.5em;
+    height: 50%;
+}
+
+#formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: var(--fondo);
+    padding: 0.1em;
+    margin: 1em;
+    width: auto;
+    height: 40em;
+    border-radius:1em;
+}
+
+.seccion {
+    margin: 0.2em;
+    background-color: var(--fondo);
+border:0.1em solid var(--fondo3);
+padding: 0.2em;
+}

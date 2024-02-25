@@ -19,6 +19,8 @@
     flex-wrap: wrap;
     background-color:var(--footer);
     width:auto;
-    height: 5.3em;
+    padding: 1em;
+    height: fit-content;
     color: var(--texto3);
+    height: 10em;
 }
