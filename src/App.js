@@ -3,9 +3,9 @@ import './App.css';
 import portadaPortfolio from './assets/portadaPortfolio.webp';
 import 'animate.css';
 import LogoNsf from './assets/LogoNsf.png';
-import MyForm from './Form/MyForm';
+
 import { Link } from 'react-router-dom';
-import Footer from './Footer/Footer';
+
 
 const links = [
   { name: 'Linkedin', href: 'https://www.linkedin.com/in/mayra-gonz%C3%A1lez-v/' },
