@@ -63,7 +63,7 @@ legend{
  #opcion,#opcion2, #opcion2, #opcion3{
     width: 30em;
     margin: 1rem;
- 
+
     
   }
 
@@ -73,3 +73,9 @@ legend{
    margin-bottom: 0.5em;
 
   }
+.seccion label {
+    color:var(--fondo2);
+}
+Button{
+    width: 20em;
+}
