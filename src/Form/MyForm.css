@@ -85,3 +85,25 @@ Alert{
     margin: 1em;
     padding: 0.5em;
 }
+
+@media (max-width: 576px) {
+    Button{
+        width: 15em;
+    }
+    legend{
+        font-size: 1.5em;
+    }
+    #opcion,#opcion2, #opcion2, #opcion3{
+        width: 14em;
+        margin: 0.5rem;
+    
+        
+      }
+      .seccion{
+        padding: 1em;
+      
+    
+     
+       }
+    
+}
