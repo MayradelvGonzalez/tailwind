@@ -3,7 +3,6 @@ import './App.css';
 import portadaPortfolio from './assets/portadaPortfolio.webp';
 import 'animate.css';
 import LogoNsf from './assets/LogoNsf.png';
-
 import { Link } from 'react-router-dom';
 
 
@@ -15,9 +14,9 @@ const links = [
 ];
 
 const stats = [
-  { name: 'About Me', value: 'Disfruto aprender, resolver los problemas y crear cosas nuevas' },
-  { name: 'Experience', value: 'Soy docente, egresada de un bootcamp de desarrollo Full-Stack MERN, tutora en un curso de programacion backend y autodidacta' },
-  { name: 'Interests', value: 'Me interesa adquirir nuevas habilidades tanto tecnicas como blandas. Entre mis intereses estan la accesibilidad web, algo que he aplicado este en este portfolio. Creo que como programadores debemos crear herramientas que lleguen al alcance de la mayor cantidad de personas mas alla de sus habilidades' },
+  { name: 'About Me', value: 'I enjoy learning,solving problems and creating new things' },
+  { name: 'Experience', value: 'I am an experienced teacher, a graduate of a full-stack MERN bootcamp, and a tutor for a backend programming course, as well as a self-taught developer' },
+  { name: 'Interests', value: 'I constantly strive to learn new skills, both technical and soft. One area of particular interest to me is web accessibility, which I have applied in my portfolio. As a developer, I believe it is our responsibility to create tools that are accessible to everyone, regardless of their abilities.' },
 ];
 
 export default function App() {
