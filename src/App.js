@@ -4,18 +4,20 @@ import portadaPortfolio from './assets/portadaPortfolio.webp';
 import 'animate.css';
 import LogoNsf from './assets/LogoNsf.png';
 import { Link } from 'react-router-dom';
-
+import musician from './assets/musician.png';
+import landing from './assets/landing.png';
+import littlepage from './assets/littlepage.png';
 const links = [
   { name: 'Linkedin', href: 'https://www.linkedin.com/in/mayra-gonz%C3%A1lez-v/' },
   { name: 'Github', href: 'https://github.com/MayradelvGonzalez' },
   { name: 'Email', href: "mailto:mayradelvallegonzalez@gmail.com" },
-  { name: 'Contact me!', to:"/contact"},
+  // { name: 'Contact me!', to: "/contact" },
 ];
 
 const stats = [
   { name: 'About Me', value: 'I enjoy learning,solving problems and creating new things' },
   { name: 'Experience', value: 'I am an experienced teacher, a graduate of a full-stack MERN bootcamp, and a tutor for a backend programming course, as well as a self-taught developer' },
-  { name: 'Interests', value: 'I constantly strive to learn new skills, both technical and soft. One area of particular interest to me is web accessibility, which I have applied in my portfolio. As a developer, I believe it is our responsibility to create tools that are accessible to everyone, regardless of their abilities.' },
+  { name: 'Interests', value: 'I constantly strive to learn new skills, both technical and soft. One area of particular interest to me is web accessibility, which I have applied in my portfolio. As a developer, I believe it is our responsibility to create tools that are accessible to everyone, regardless of their abilities. I believe that by constantly improving our skills and creating accessible solutions, we can make a difference in the lives of people around the world.' },
 ];
 
 export default function App() {
@@ -27,8 +29,9 @@ export default function App() {
     );
   };
 
+  return (
     <div className="fondo relative isolate overflow-hidden bg-gray-900 py-24 sm:py-52">
-      
+
       <div className='logo'><img src={LogoNsf} alt="Logo" aria-label='page logo' /></div>
       <img src={portadaPortfolio}
         alt="background"
@@ -71,51 +74,127 @@ export default function App() {
         </div>
         <div className="mx-auto mt-20 max-w-2xl lg:mx-0 lg:max-w-none" id='caja'>
           <div className="links-container">
-          {links.map((link) => (
-    link.to ? (
-      <Link key={link.name} to={link.to} className='name link'>
-        {link.name} <span aria-hidden="true">&rarr;</span>
-      </Link>
-    ) : (
-      <a key={link.name} href={link.href} target='_BLANK' rel="noopener noreferrer" tabIndex={0} className='name link'>
-        {link.name} <span aria-hidden="true">&rarr;</span>
-      </a>
-    )
-  ))}
+            {links.map((link) => (
+              link.to ? (
+                <Link key={link.name} to={link.to} className='name link'>
+                  {link.name} <span aria-hidden="true">&rarr;</span>
+                </Link>
+              ) : (
+                <a key={link.name} href={link.href} target='_BLANK' rel="noopener noreferrer" tabIndex={0} className='name link'>
+                  {link.name} <span aria-hidden="true">&rarr;</span>
+                </a>
+              )
+            ))}
           </div>
-          
 
-<div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
-  {stats.map((stat, index) => (
-    <div key={stat.name} className={`flex stat${index + 1}`} style={{ position: 'relative' }}>
-      <button className="dropdown-trigger" onClick={() => handleButtonClick(`button${index + 1}`)}>
-        <dl>
-          <div>
-            
-            <dt className="textos text-base leading-8 " id='tituloInformacion'>
-              {stat.name}
-            </dt>
-            <dd className="textos text-1xl leading-9 tracking-tight text-white" id='titInfo'
-              style={{
-                position: 'absolute',
-                top: '100%',
-                left: 0,
-                display: selectedOption === `button${index + 1}` ? 'block' : 'none',
-              }}
-            >
-              <div className="info-container">{stat.value}</div>
-            </dd>
+
+          <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
+            {stats.map((stat, index) => (
+              <div key={stat.name} className={`flex stat${index + 1}`} style={{ position: 'relative' }}>
+                <button className="dropdown-trigger" onClick={() => handleButtonClick(`button${index + 1}`)}>
+                  <dl>
+                    <div>
+
+                      <dt className="textos text-base leading-8 " id='tituloInformacion'>
+                        {stat.name}
+                      </dt>
+                      <dd className="textos text-1xl leading-9 tracking-tight text-white" id='titInfo'
+                        style={{
+                          position: 'absolute',
+                          top: '100%',
+                          left: 0,
+                          display: selectedOption === `button${index + 1}` ? 'block' : 'none',
+                        }}
+                      >
+                        <div className="info-container">{stat.value}</div>
+                      </dd>
+                    </div>
+                  </dl>
+                </button>
+              </div>
+            ))}
           </div>
-        </dl>
-      </button>
-    </div>
-  ))}
-</div>
 
 
         </div>
+<div className='contenedorPaginas'>
+
+        <a href="https://juanvalenzuela.vercel.app/" className="group relative block bg-black" target='_BLANK' >
+  <img
+    alt="page example"
+    src={musician}
+    className="absolute inset-0 h-full w-full object-cover opacity-85 transition-opacity group-hover:opacity-50"
+    id='imagenPaginas'
+  />
+
+  <div className="relative p-4 sm:p-6 lg:p-8">
+    {/* <p className="text-sm font-medium uppercase tracking-widest text-pink-500">Musician</p> */}
+
+    <p className="text-xl font-bold text-black sm:text-2xl">Musician Page</p>
+
+    <div className="mt-32 sm:mt-48 lg:mt-64">
+      <div
+        className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+      >
+        <p className="text-sm text-white bg-black" style={{ padding: '10px' }}>
+        Website built with HTML, CSS, JavaScript, and React
+        </p>
       </div>
-  
+    </div>
+  </div>
+</a>
+<a href="https://my-page-sigma-ten.vercel.app/" className="group relative block bg-black" target='_BLANK' >
+  <img
+    alt="page example"
+    src={littlepage}
+    className="absolute inset-0 h-full w-full object-cover opacity-85 transition-opacity group-hover:opacity-50"
+    id='imagenPaginas'
+  />
+
+  <div className="relative p-4 sm:p-6 lg:p-8">
+    {/* <p className="text-sm font-medium uppercase tracking-widest text-pink-500">Musician</p> */}
+
+    <p className="text-xl font-bold text-black sm:text-2xl">Little-Page</p>
+
+    <div className="mt-32 sm:mt-48 lg:mt-64">
+      <div
+        className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+      >
+        <p className="text-sm text-white bg-black" style={{ padding: '10px' }}>
+        Website built with HTML, CSS, JavaScript, and React
+        </p>
+      </div>
+    </div>
+  </div>
+</a>
+<a href="https://miproyecto-psi.vercel.app/" className="group relative block bg-black" target='_BLANK' >
+  <img
+    alt="page example"
+    src={landing}
+    className="absolute inset-0 h-full w-full object-cover opacity-85 transition-opacity group-hover:opacity-50"
+    id='imagenPaginas'
+  />
+
+  <div className="relative p-4 sm:p-6 lg:p-8">
+    {/* <p className="text-sm font-medium uppercase tracking-widest text-pink-500">Musician</p> */}
+
+    <p className="text-xl font-bold text-black sm:text-2xl">Landing</p>
+
+    <div className="mt-32 sm:mt-48 lg:mt-64">
+      <div
+        className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+      >
+        <p className="text-sm text-white bg-black" style={{ padding: '10px' }}>
+        Website built with HTML, CSS, JavaScript, and React
+        </p>
+      </div>
+    </div>
+  </div>
+</a>
+</div>
+
+      </div>
+
     </div>
   );
 }
