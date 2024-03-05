@@ -180,7 +180,6 @@ a {
   left: 0;
   z-index: 10;
 
-
 }
 .grid {
   display: flex;
@@ -206,13 +205,9 @@ a {
 }
 .info-container {
   width: 350px;
-  /* Adjust as needed */
   padding: 1.5rem;
-  /* Add padding for better readability */
   border: 1px solid var(--fondo3);
-  /* Optional border for visual separation */
   border-radius: 5px;
-  /* Optional rounded corners */
   background-color: var(--fondo);
   color:var(--fondo2);
   overflow-y: auto;

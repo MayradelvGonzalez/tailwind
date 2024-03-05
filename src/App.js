@@ -5,7 +5,6 @@ import 'animate.css';
 import LogoNsf from './assets/LogoNsf.png';
 import { Link } from 'react-router-dom';
 
-
 const links = [
   { name: 'Linkedin', href: 'https://www.linkedin.com/in/mayra-gonz%C3%A1lez-v/' },
   { name: 'Github', href: 'https://github.com/MayradelvGonzalez' },
@@ -28,7 +27,6 @@ export default function App() {
     );
   };
 
-  return (
     <div className="fondo relative isolate overflow-hidden bg-gray-900 py-24 sm:py-52">
       
       <div className='logo'><img src={LogoNsf} alt="Logo" aria-label='page logo' /></div>
