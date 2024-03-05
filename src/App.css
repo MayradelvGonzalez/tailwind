@@ -10,11 +10,14 @@
   --texto3: #F3F2DA;
   --titulo3: #964B00;
 }
-
+body{
+  background-color:black;
+ 
+}
 .fondo {
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
-  background-size: cover;
+  /* background-size: cover; */
   position: relative;
   padding-top: 3%;
 }
@@ -33,7 +36,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(80deg, rgba(0, 0, 0, 0.967) 28%, rgba(75,75,75,1) 100%);
 }
 
 .fondo .name,
@@ -69,7 +72,6 @@ a {
 
 .fondo .infor {
   padding-bottom: 1em;
-
 }
 
 .fondo .name {
@@ -116,7 +118,6 @@ a {
   animation: fadeInLeft;
   animation-duration: 2s;
   margin-top: 3em;
-
 }
 
 .stat2 {
@@ -134,8 +135,10 @@ a {
 
 .logo {
   width: 10rem;
-  background: radial-gradient(circle, rgb(0, 0, 0) 30%, transparent 50%);
+  background-color:var(--fondo);
   margin: 3em;
+  z-index: 1;
+  border-radius: 2em;
 }
 
 .tituloLogo {
@@ -170,6 +173,7 @@ a {
   scrollbar-color: var(--titulo) var(--fondo);
   scrollbar-width: auto;
   background-color: rgb(77, 74, 74);
+
 
 }
 
@@ -349,7 +353,6 @@ a {
     font-size: 1.2em;
     flex-direction: column;
     margin: 0.5em;
-
     width: 10rem;
   }
 
@@ -377,7 +380,6 @@ a {
     font-size: 0.8em;
     flex-direction: column;
     /* Mostrar en una sola columna en móviles */
-
   }
 
 

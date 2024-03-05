@@ -30,15 +30,17 @@ export default function App() {
   };
 
   return (
+    
     <div className="fondo relative isolate overflow-hidden bg-gray-900 py-24 sm:py-52">
 
-      <div className='logo'><img src={LogoNsf} alt="Logo" aria-label='page logo' /></div>
-      <img src={portadaPortfolio}
+<div className='logo'><img src={LogoNsf} alt="Logo" aria-label='page logo' /></div>
+      {/* <img src={portadaPortfolio}
         alt="background"
         aria-label='background'
         className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
         style={{ opacity: '0.3' }}
-      />
+      /> */}
+      
       <div
         className="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
         aria-hidden="true"
@@ -63,11 +65,12 @@ export default function App() {
           }}
         />
       </div>
+      
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <div className="tituloLogo">
             <h2 className=" textos tit text-4xl font tracking-tight text-white sm:text-6xl" id='nombre'>
-              Mayra del Valle González</h2>
+              Mayra del Valle González</h2> 
           </div>
           <p className="textos mt-20 text-4xl leading-9 text-gray-100" id='subtitulo'>
             Full-Stack developer</p>
@@ -86,7 +89,81 @@ export default function App() {
               )
             ))}
           </div>
+          <div className='contenedorPaginas'>
 
+<a href="https://juanvalenzuela.vercel.app/" className="group relative block bg-black" target='_BLANK' >
+<img
+alt="page example"
+src={musician}
+className="absolute inset-0 h-full w-full object-cover opacity-85 transition-opacity group-hover:opacity-50"
+id='imagenPaginas'
+/>
+
+<div className="relative p-4 sm:p-6 lg:p-8">
+{/* <p className="text-sm font-medium uppercase tracking-widest text-pink-500">Musician</p> */}
+
+<p className="text-xl font-bold text-black sm:text-2xl">Musician Page</p>
+
+<div className="mt-32 sm:mt-48 lg:mt-64">
+<div
+className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+>
+<p className="text-sm text-white bg-black" style={{ padding: '10px' }}>
+Website built with HTML, CSS, JavaScript, and React
+</p>
+</div>
+</div>
+</div>
+</a>
+<a href="https://my-page-sigma-ten.vercel.app/" className="group relative block bg-black" target='_BLANK' >
+<img
+alt="page example"
+src={littlepage}
+className="absolute inset-0 h-full w-full object-cover opacity-85 transition-opacity group-hover:opacity-50"
+id='imagenPaginas'
+/>
+
+<div className="relative p-4 sm:p-6 lg:p-8">
+{/* <p className="text-sm font-medium uppercase tracking-widest text-pink-500">Musician</p> */}
+
+<p className="text-xl font-bold text-black sm:text-2xl">Little-Page</p>
+
+<div className="mt-32 sm:mt-48 lg:mt-64">
+<div
+className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+>
+<p className="text-sm text-white bg-black" style={{ padding: '10px' }}>
+Website built with HTML, CSS, JavaScript, and React
+</p>
+</div>
+</div>
+</div>
+</a>
+<a href="https://miproyecto-psi.vercel.app/" className="group relative block bg-black" target='_BLANK' >
+<img
+alt="page example"
+src={landing}
+className="absolute inset-0 h-full w-full object-cover opacity-85 transition-opacity group-hover:opacity-50"
+id='imagenPaginas'
+/>
+
+<div className="relative p-4 sm:p-6 lg:p-8">
+{/* <p className="text-sm font-medium uppercase tracking-widest text-pink-500">Musician</p> */}
+
+<p className="text-xl font-bold text-black sm:text-2xl">Landing</p>
+
+<div className="mt-32 sm:mt-48 lg:mt-64">
+<div
+className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+>
+<p className="text-sm text-white bg-black" style={{ padding: '10px' }}>
+Website built with HTML, CSS, JavaScript, and React
+</p>
+</div>
+</div>
+</div>
+</a>
+</div>
 
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
             {stats.map((stat, index) => (
@@ -117,81 +194,7 @@ export default function App() {
 
 
         </div>
-<div className='contenedorPaginas'>
 
-        <a href="https://juanvalenzuela.vercel.app/" className="group relative block bg-black" target='_BLANK' >
-  <img
-    alt="page example"
-    src={musician}
-    className="absolute inset-0 h-full w-full object-cover opacity-85 transition-opacity group-hover:opacity-50"
-    id='imagenPaginas'
-  />
-
-  <div className="relative p-4 sm:p-6 lg:p-8">
-    {/* <p className="text-sm font-medium uppercase tracking-widest text-pink-500">Musician</p> */}
-
-    <p className="text-xl font-bold text-black sm:text-2xl">Musician Page</p>
-
-    <div className="mt-32 sm:mt-48 lg:mt-64">
-      <div
-        className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
-      >
-        <p className="text-sm text-white bg-black" style={{ padding: '10px' }}>
-        Website built with HTML, CSS, JavaScript, and React
-        </p>
-      </div>
-    </div>
-  </div>
-</a>
-<a href="https://my-page-sigma-ten.vercel.app/" className="group relative block bg-black" target='_BLANK' >
-  <img
-    alt="page example"
-    src={littlepage}
-    className="absolute inset-0 h-full w-full object-cover opacity-85 transition-opacity group-hover:opacity-50"
-    id='imagenPaginas'
-  />
-
-  <div className="relative p-4 sm:p-6 lg:p-8">
-    {/* <p className="text-sm font-medium uppercase tracking-widest text-pink-500">Musician</p> */}
-
-    <p className="text-xl font-bold text-black sm:text-2xl">Little-Page</p>
-
-    <div className="mt-32 sm:mt-48 lg:mt-64">
-      <div
-        className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
-      >
-        <p className="text-sm text-white bg-black" style={{ padding: '10px' }}>
-        Website built with HTML, CSS, JavaScript, and React
-        </p>
-      </div>
-    </div>
-  </div>
-</a>
-<a href="https://miproyecto-psi.vercel.app/" className="group relative block bg-black" target='_BLANK' >
-  <img
-    alt="page example"
-    src={landing}
-    className="absolute inset-0 h-full w-full object-cover opacity-85 transition-opacity group-hover:opacity-50"
-    id='imagenPaginas'
-  />
-
-  <div className="relative p-4 sm:p-6 lg:p-8">
-    {/* <p className="text-sm font-medium uppercase tracking-widest text-pink-500">Musician</p> */}
-
-    <p className="text-xl font-bold text-black sm:text-2xl">Landing</p>
-
-    <div className="mt-32 sm:mt-48 lg:mt-64">
-      <div
-        className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
-      >
-        <p className="text-sm text-white bg-black" style={{ padding: '10px' }}>
-        Website built with HTML, CSS, JavaScript, and React
-        </p>
-      </div>
-    </div>
-  </div>
-</a>
-</div>
 
       </div>
 
