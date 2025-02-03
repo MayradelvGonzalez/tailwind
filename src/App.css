@@ -275,35 +275,6 @@ padding-bottom: 1em;
   padding: 0.5rem 1rem 0.5rem 1.5rem;
 }
 
-/* .arrow-down {
-  top: 80%;
-  right: 0.8rem;
-  transform: translateY(-50%);
-  background-color: black;
-  border-radius: 1em;
-  border: 0.1em solid var(--fondo2);
-  width: 30%;
-  padding: 0.1em 0.6em;
-}
-
-.arrow-down:hover {
-  background-color: var(--fondo2);
-  color: var(--fondo);
-  border-radius: 1em;
-
-}
-
-.arrow-up {
-  position: absolute;
-  top: 50%;
-  right: 0.5rem;
-  transform: translateY(-50%);
-  display: none;
-} */
-
-/* .stat.active .arrow-up {
-  display: block;
-} */
 
 /* ---------------------------------------------------------------------------------- */
 @media (max-width: 576px) {
@@ -315,7 +286,24 @@ padding-bottom: 1em;
   .name {
     text-align: right;
   }
+  .contenedorPaginas {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;    /* Center items horizontally */
+    gap: 1rem; /* Add some spacing between the items */
+  }
 
+  .contenedorPaginas a { /* Target the <a> tags within the container */
+    width: 90%; /* Or a specific width like width: 300px;  */
+    max-width: 400px; /* or whatever max width you want */
+    margin: 0 auto; /* Center the links horizontally */
+  }
+
+  #imagenPaginas {
+    width: 100%; /* Ensure images take full width of their container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Prevent any small spacing issues */
+  }
   .name::before {
     content: "";
     position: absolute;
@@ -337,21 +325,23 @@ padding-bottom: 1em;
   }
 
   .logo {
-    width: 10rem;
+    width: 5rem;
     margin-bottom: 3rem;
     background: radial-gradient(circle, rgba(0, 0, 0, 1) 10%, transparent 55%);
+    
   }
 
-  .tituloLogo {
+  /* .tituloLogo {
     display: flex;
     width: 94%;
     justify-content: space-between;
-  }
+    
+  } */
 
-  #nombre {
+  /* #nombre {
     font-size: 2em;
     font-family: 'Courier New', Courier, monospace;
-  }
+  } */
 
   #subtitulo {
     font-size: 1.4em;
@@ -445,5 +435,59 @@ padding-bottom: 1em;
     padding: 0;
 
   }
+
+ 
+
+  .tituloLogo {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    width: 80%; 
+    text-align: center; 
+  }
+
+  #nombre {
+    font-size: 2em;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 0.5rem; /* Add some spacing below the title */
+  }
+
+  #subtitulo {
+    font-size: 1.4em;
+  }
+
+  .grid {
+    width: 100%;
+    flex-direction: column; /* Stack projects vertically */
+    gap: 1rem; /* Add spacing between projects */
+    font-size: 0.8em;
+    align-items: center; /* Center projects horizontally */
+  }
+
+  .info-container {
+    /* ... (rest of your info-container styles) */
+    width: 90%; /* Make info container responsive */
+    max-width: 300px;
+    margin: 1rem auto; /* Center the info container */
+    position: relative; /* Remove absolute positioning */
+    top: auto;
+    left: auto;
+    transform: none;
+  }
+
+  .link {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-bottom: 1rem; /* Add spacing between links */
+    align-items: center; /* Center link content */
+  }
+
+  .link a {
+    margin: 0.5rem 0; /* Adjust margin for better spacing */
+  }
+
+
+
 
 }
