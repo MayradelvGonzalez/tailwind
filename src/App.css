@@ -1,7 +1,7 @@
 :root {
   --fondo: #4B4B4B;
   --texto: #006F9A;
-  /* --titulo:#65D527; */
+  --titulo:#65D527;
   --titulo: #63ea92;
   --fondo2: #FFFFFF;
   --texto2: #FF2E00;
@@ -11,7 +11,8 @@
   --titulo3: #964B00;
 }
 body{
-  background-color:black;
+  /* background-color:black; */
+  background-color: rgb(77, 74, 74);
  
 }
 .fondo {
@@ -113,7 +114,13 @@ a {
 .texto {
   font-size: larger;
 }
-
+.tituloProyectos{
+  color: white;
+font-size: 2em;
+padding-top: 1.5em;
+padding-bottom: 1em;
+  text-align: center;
+}
 .stat1 {
   animation: fadeInLeft;
   animation-duration: 2s;
@@ -134,18 +141,19 @@ a {
 }
 
 .logo {
-  width: 10rem;
-  background-color:var(--fondo);
-  margin: 3em;
-  z-index: 1;
-  border-radius: 2em;
+  width: 5em;
+  margin: 2em;
+  position: absolute;
+  top: 1rem; /* Or a pixel value like top: 20px; */
+  right: 1rem; /* Or right: 20px; */
+
 }
 
 .tituloLogo {
   display: flex;
   flex-direction: row;
   width: 100vh;
-
+  margin-top: 4em;
 
 }
 
@@ -256,6 +264,7 @@ a {
 }
 #imagenPaginas{
   font-size: 1em;
+  
 }
 
 
@@ -337,7 +346,6 @@ a {
     display: flex;
     width: 94%;
     justify-content: space-between;
-
   }
 
   #nombre {

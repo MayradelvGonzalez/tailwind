@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './App.css';
-import portadaPortfolio from './assets/portadaPortfolio.webp';
+// import portadaPortfolio from './assets/portadaPortfolio.webp';
 import 'animate.css';
-import LogoNsf from './assets/LogoNsf.png';
+import LogoNsf from './assets/logo.gif';
 import { Link } from 'react-router-dom';
 import musician from './assets/musician.png';
 import landing from './assets/landing.png';
@@ -30,10 +30,19 @@ export default function App() {
   };
 
   return (
-    
-    <div className="fondo relative isolate overflow-hidden bg-gray-900 py-24 sm:py-52">
 
-<div className='logo'><img src={LogoNsf} alt="Logo" aria-label='page logo' /></div>
+ 
+    <div className="fondo relative isolate overflow-hidden bg-gray-900 py-24 sm:py-52">
+    <div className='logo relative z-10'><img 
+          src={LogoNsf} 
+          alt="Logo" 
+          aria-label='page logo' 
+          // Important attributes for GIF animation:
+          loading="eager" //  Load the GIF immediately. Avoid lazy loading for animations.
+          decoding="async" // Let the browser decode the GIF in the background.
+          style={{ display: "block" }} // To prevent any unwanted spacing around the image.
+        /></div>
+
       {/* <img src={portadaPortfolio}
         alt="background"
         aria-label='background'
@@ -88,8 +97,10 @@ export default function App() {
                 </a>
               )
             ))}
-          </div>
+          </div> 
+          <h1 className='tituloProyectos relative z-10'><u>Proyects:</u></h1>
           <div className='contenedorPaginas'>
+           
 
 <a href="https://juanvalenzuela.vercel.app/" className="group relative block bg-black" target='_BLANK' >
 <img
@@ -199,5 +210,6 @@ Website built with HTML, CSS, JavaScript, and React
       </div>
 
     </div>
+
   );
 }
