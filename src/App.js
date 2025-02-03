@@ -119,7 +119,7 @@ id='imagenPaginas'
 <div
 className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
 >
-<p className="text-sm text-white bg-black" style={{ padding: '10px' }}>
+<p className="text-sm text-white bg-black elemento" style={{ padding: '10px' }}>
 Website built with HTML, CSS, JavaScript, and React
 </p>
 </div>
@@ -143,7 +143,7 @@ id='imagenPaginas'
 <div
 className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
 >
-<p className="text-sm text-white bg-black" style={{ padding: '10px' }}>
+<p className="text-sm text-white bg-black elemento" style={{ padding: '10px' }}>
 Website built with HTML, CSS, JavaScript, and React
 </p>
 </div>
@@ -167,7 +167,7 @@ id='imagenPaginas'
 <div
 className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
 >
-<p className="text-sm text-white bg-black" style={{ padding: '10px' }}>
+<p className="text-sm text-white bg-black elemento" style={{ padding: '10px' }}>
 Website built with HTML, CSS, JavaScript, and React
 </p>
 </div>

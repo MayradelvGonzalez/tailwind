@@ -288,9 +288,9 @@ padding-bottom: 1em;
   }
   .contenedorPaginas {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center;    /* Center items horizontally */
-    gap: 1rem; /* Add some spacing between the items */
+    flex-direction: column; 
+    align-items: center;    
+    gap: 1rem; 
   }
 
   .contenedorPaginas a { /* Target the <a> tags within the container */
@@ -301,7 +301,7 @@ padding-bottom: 1em;
 
   #imagenPaginas {
     width: 100%; /* Ensure images take full width of their container */
-    height: auto; /* Maintain aspect ratio */
+    height: 100%; /* Maintain aspect ratio */
     display: block; /* Prevent any small spacing issues */
   }
   .name::before {
@@ -486,8 +486,19 @@ padding-bottom: 1em;
   .link a {
     margin: 0.5rem 0; /* Adjust margin for better spacing */
   }
+  .group .translate-y-8 {
+    pointer-events: none; 
+    opacity:1; 
+    transform: translateY(0); 
+    transition: transform 0.4s, opacity 0.5s; 
+    animation: lightSpeedInRight 1s ease-in-out;
+  
+  }
 
 
+  
+
+  
 
 
 }
